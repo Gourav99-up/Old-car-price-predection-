@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #edf1f5;
+    padding: 30px;
+    color: #24384e;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    background: #f7f9fb;
+    border: 2px solid #bdcbd4;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+header {
+    background: #1c3659;
+    color: white;
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header h2 {
+    font-size: 23px;
+}
+
+header span {
+    font-size: 15px;
+}
+
+.heading {
+    text-align: center;
+    padding: 35px 15px 20px;
+}
+
+.heading h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.heading p {
+    color: #637b8b;
+    font-size: 17px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 25px;
+    padding: 25px 40px;
+}
+
+.form-card {
+    background: white;
+    border: 2px solid #d0dce2;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.form-card h2 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    background: #f0f3f5;
+    border: 1px solid #bdcbd3;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #1c527f;
+}
+
+#predictBtn {
+    display: block;
+    margin: 30px auto 5px;
+    padding: 17px 35px;
+    background: #1c3659;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#predictBtn:hover {
+    background: #315783;
+}
+
+#predictBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.result-card {
+    background: #e9f5e9;
+    border: 3px solid #398347;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    min-height: 400px;
+}
+
+.result-card h2 {
+    color: #216a31;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: bold;
+    color: #328044;
+    margin: 65px 0 25px;
+}
+
+#message {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.status {
+    margin-top: 45px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    color: #536779;
+    line-height: 1.8;
+}
+
+footer {
+    background: #1c3659;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media(max-width: 850px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+}
